@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://v3.bootcss.com/examples/offcanvas/# -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="./image/waanan.jpg">
+
+<title>For love and peace</title>
+
+<!-- Bootstrap core CSS -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="./css/offcanvas.css" rel="stylesheet">
+
+<!-- Optional Bootstrap Theme -->
+<link href="data:text/css;charset=utf-8," data-href="./css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+
+<link href="./css/patch.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+
+<link href="./css/docs.min.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="./js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+<div class="container">
+<div class="navbar-header">
+<a id =“top” class="navbar-brand" href="index.html">LT</a>
+</div>
+<div id="navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li class="active"><a href="index.html">basic info</a></li>
+</ul>
+</div><!-- /.nav-collapse -->
+</div><!-- /.container -->
+</nav><!-- /.navbar -->
+
+<div class="container bs-docs-container">
+
+<div class="row">
+<div class="col-md-9" role="main">
+<div class="bs-docs-section">
+<h1 id="basicinfo" class="page-header"><a class="anchorjs-link " href="#basicinfo" aria-label="Anchor link for: glyphicons" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Basic Info</h1>
+
+<h2 id="psize"><a class="anchorjs-link " href="#psize" aria-label="Anchor link for: glyphicons glyphs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Program Size</h2>
+<div class="panel panel-default">
+<!-- Default panel contents -->
+<div class="panel-heading">Data</div>
+<!-- <div class="panel-body">
+<p></p>
+</div>-->
+
+<!-- Table -->
+<table class="table">
+<thead>
+<tr>
+<th>#</th>
+<th>Name</th>
+<th>Amounts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">1</th>
+<td>Total Classes</td>
+<td>
+3872
+</td>
+</tr>
+<tr>
+<th scope="row">2</th>
+<td>Total Methods</td>
+<td>
+179872
+</td>
+</tr>
+<tr>
+<th scope="row">3</th>
+<td>NEW OBJECTS</td>
+<td>
+327122
+</td>
+</tr>
+<tr>
+<th scope="row">4</th>
+<td>DEAD OBJECTS</td>
+<td>
+321322
+</td>
+</tr>
+<tr>
+<th scope="row">5</th>
+<td>MOVED OBJECTS</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<th scope="row">6</th>
+<td>ACCESSED OBJECTS</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<th scope="row">7</th>
+<td>NO. GC</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<th scope="row">8</th>
+<td>No. ALLOCATION SITE</td>
+<td>
+105
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 id="olife"><a class="anchorjs-link " href="#olife" aria-label="Anchor link for: glyphicons glyphs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Life Of Objects</h2>
+
+<div id="olifechart" style="min-width:600px;height:400px"></div>
+<div class="panel panel-default">
+<!-- Default panel contents -->
+<div class="panel-heading">Data</div>
+<!-- <div class="panel-body">
+<p></p>
+</div>-->
+
+<!-- Table -->
+<table class="table">
+<thead>
+<tr>
+<th>Gc Times</th>
+<th>Dead Percents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">0</th>
+<td>84.52%</td>
+</tr>
+<tr>
+<th scope="row">1</th>
+<td>9.09%</td>
+</tr>
+<tr>
+<th scope="row">2</th>
+<td>2.35%</td>
+</tr>
+<tr>
+<th scope="row">3</th>
+<td>1.39%</td>
+</tr>
+<tr>
+<th scope="row">4</th>
+<td>0.95%</td>
+</tr>
+<tr>
+<th scope="row">5</th>
+<td>0.86%</td>
+</tr>
+<tr>
+<th scope="row">6</th>
+<td>0.35%</td>
+</tr>
+<tr>
+<th scope="row">7</th>
+<td>0.01%</td>
+</tr>
+<tr>
+<th scope="row">8</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">9</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">10</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">11</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">12</th>
+<td>0.06%</td>
+</tr>
+<tr>
+<th scope="row">13</th>
+<td>0.40%</td>
+</tr>
+<tr>
+<th scope="row">14</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">15</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">16</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">17</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">18</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">19</th>
+<td>0.00%</td>
+</tr>
+                  </tbody>
+                </table>
+              </div>
+    
+        <h2 id="topsite"><a class="anchorjs-link " href="#topsite" aria-label="Anchor link for: glyphicons glyphs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Top Sites</h2>
+        <div id="topsitechart" style="min-width:600px;height:400px"></div>
+        <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Data</div>
+<!--      <div class="panel-body">
+        <p></p>
+      </div>-->
+
+                <!-- Table -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Site</th>
+                      <th>No. obj</th>
+                      <th>Per. %</th>
+                      <th>Name</th>
+                      <th>No. obj</th>
+                      <th>Class Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+<tr>
+<th scope="row">727FE0E3</th>
+<td>60605</td>
+<td>18.53</td>
+<td>java.util.ArrayList::add</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>90908</td>
+<td>java.lang.Object[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.system.StructStat</td>
+</tr>
+<tr>
+<th scope="row">7271821F</th>
+<td>60030</td>
+<td>18.35</td>
+<td>java.lang.AbstractStringBuilder::&ltinit&gt</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>30359</td>
+<td>java.lang.String</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>30307</td>
+<td>char[]</td>
+</tr>
+<tr>
+<th scope="row">B67C9379</th>
+<td>50700</td>
+<td>15.50</td>
+<td>Planner::addPropagate</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>83614</td>
+<td>java.util.ArrayList</td>
+</tr>
+<tr>
+<th scope="row">B67CA83D</th>
+<td>30300</td>
+<td>9.26</td>
+<td>Variable::&ltinit&gt</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>83614</td>
+<td>java.util.ArrayList</td>
+</tr>
+<tr>
+<th scope="row">727FDA95</th>
+<td>30300</td>
+<td>9.26</td>
+<td>java.util.ArrayList::&ltinit&gt</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>90908</td>
+<td>java.lang.Object[]</td>
+</tr>
+                  </tbody>
+                </table>
+              </div>
+  
+        <h2 id="leaksite"><a class="anchorjs-link " href="#leaksite" aria-label="Anchor link for: glyphicons glyphs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>May Leak Sites</h2>
+<div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Data</div>
+<!--      <div class="panel-body">
+        <p></p>
+      </div>-->
+                <!-- Table -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Num. Born</th>
+                      <th>Stale Mem. (bytes)</th>
+                      <th>Leak Conf</th>
+                      <th>Summary</th>
+                      <th>Sllocation Site</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+<tr>
+<th scope="row">60030</th>
+<td>6928</td>
+<td>116.22</td>
+<td>Very Stale</td>
+<td>java.lang.AbstractStringBuilder::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>java.lang.String(0bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>char[](0bytes)</td>
+</tr>
+<tr>
+<th scope="row">30300</th>
+<td>4420</td>
+<td>112.85</td>
+<td>Very Stale</td>
+<td>Variable::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>java.util.ArrayList(20bytes)</td>
+</tr>
+                  </tbody>
+                </table>
+              </div>
+        
+        <h2 id="topclass"><a class="anchorjs-link " href="#topclass" aria-label="Anchor link for: glyphicons glyphs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Top Classes</h2>
+        <div id="topclasschart" style="min-width:600px;height:400px"></div>
+        <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Data</div>
+<!--      <div class="panel-body">
+        <p></p>
+      </div>-->
+                <!-- Table -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Site</th>
+                      <th>No. obj</th>
+                      <th>Per. %</th>
+                      <th>Name</th>
+                      <th>No. obj</th>
+                      <th>Alloc Site</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+<tr>
+<th scope="row">701857E8</th>
+<td>90908</td>
+<td>27.79</td>
+<td>java.lang.Object[]</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>60605</td>
+<td>java.util.ArrayList::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>30300</td>
+<td>java.util.ArrayList::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>java.lang.ThreadLocal$Values::initializeTable</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>java.util.ArrayList::toArray</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>java.util.ArrayList::addAll</td>
+</tr>
+<tr>
+<th scope="row">701C1B08</th>
+<td>83614</td>
+<td>25.56</td>
+<td>java.util.ArrayList</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>50700</td>
+<td>Planner::addPropagate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>30300</td>
+<td>Variable::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>500</td>
+<td>Planner::extractPlanFromConstraints</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>500</td>
+<td>Plan::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>500</td>
+<td>Planner::removePropagateFrom</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>500</td>
+<td>Planner::removePropagateFrom</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>400</td>
+<td>DeltaBlue::change</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>100</td>
+<td>DeltaBlue::chainTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>100</td>
+<td>DeltaBlue::projectionTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>java.lang.Thread::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>java.lang.Runtime::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>dalvik.system.DexPathList::splitPaths</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>java.lang.Thread::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>dalvik.system.DexPathList::makePathElements</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>dalvik.system.DexPathList::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>dalvik.system.DexPathList::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row">70185FF0</th>
+<td>30359</td>
+<td>9.28</td>
+<td>java.lang.String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>60030</td>
+<td>java.lang.AbstractStringBuilder::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>300</td>
+<td>java.lang.IntegralToString::convertInt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>246</td>
+<td>java.lang.IntegralToString::convertInt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>70</td>
+<td>java.util.Properties::put</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>26</td>
+<td>java.lang.AbstractStringBuilder::enlargeBuffer</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>22</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+<td>java.lang.ThreadGroup::addThread</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>17</td>
+<td>Variable::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>dalvik.system.DexPathList::makePathElements</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>java.util.regex.Splitter::fastSplit</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>java.lang.Runtime::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>dalvik.system.DexPathList::splitPaths</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>java.lang.System::initUnchangeableSystemProperties</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::inst_main</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::inst_main</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::inst_main</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::inst_main</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::projectionTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::projectionTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::projectionTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::projectionTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::projectionTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::projectionTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::chainTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::chainTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>DeltaBlue::inst_main</td>
+</tr>
+<tr>
+<th scope="row">701EE900</th>
+<td>30307</td>
+<td>9.26</td>
+<td>char[]</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>60030</td>
+<td>java.lang.AbstractStringBuilder::&ltinit&gt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>300</td>
+<td>java.lang.IntegralToString::convertInt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>246</td>
+<td>java.lang.IntegralToString::convertInt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>26</td>
+<td>java.lang.AbstractStringBuilder::enlargeBuffer</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>dalvik.system.DexPathList::makePathElements</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>dalvik.system.DexPathList::splitPaths</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>dalvik.system.DexFile::openDexFile</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>java.lang.IntegralToString$1::initialValue</td>
+</tr>
+<tr>
+<th scope="row">12C3F4C0</th>
+<td>30300</td>
+<td>9.26</td>
+<td>Variable</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10103</td>
+<td>DeltaBlue::chainTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10000</td>
+<td>DeltaBlue::projectionTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10000</td>
+<td>DeltaBlue::projectionTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>100</td>
+<td>DeltaBlue::projectionTest</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>100</td>
+<td>DeltaBlue::projectionTest</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3" role="complementary">
+<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+<ul class="nav bs-docs-sidenav">
+
+<li class="">
+<p style="color: #FFFFFF" >nav</p>
+</li>
+<li class="">
+<a href="#psize">Program Size</a>
+</li>
+
+<li class=""><a href="#olife">Life of Objects</a></li>
+<li class=""><a href="#topsite">Top Sites</a></li>
+<li class=""><a href="#leaksite">May Leak SItes</a></li>
+<li class=""><a href="#topclass">Top Classes</a></li>
+</ul>
+<a class="back-to-top" href="#top">
+返回顶部
+</a>
+
+</nav>
+</div>
+
+</div>
+
+
+
+
+
+<hr>
+
+<footer>
+<p>© waanan 2015</p>
+</footer>
+
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/docs.min.js"></script>
+
+<script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+<!-- <script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/exporting.js"></script>-->
+<script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/highcharts-3d.js"></script>
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="./js/ie10-viewport-bug-workaround.js"></script>
+
+<script src="./js/offcanvas.js"></script>
+
+<script type="text/javascript">
+$(function () {
+$('#olifechart').highcharts({
+chart: {
+type: 'column',
+margin: 75,
+options3d: {
+enabled: true,
+alpha: 10,
+beta: 25,
+depth: 70
+}
+},
+title: {
+text: 'Live Objects After Gc'
+},
+subtitle: {
+text: ''
+},
+plotOptions: {
+column: {
+depth: 25
+}
+},
+xAxis: {
+categories: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+},
+yAxis: {
+opposite: true
+},
+series: [{
+name: 'per',
+data: [
+84.52,9.09,2.35,1.39,0.95,0.86,0.35,0.01,0.00,0.00,0.00,0.00,0.06,0.40,0.00,0.00,0.00,0.00,0.00,0.00                        ]
+        }]
+    });
+});
+
+$(function () {
+    $('#topsitechart').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Top Allocation Sites'
+        },
+        tooltip: {
+    	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    color: '#000000',
+                    connectorColor: '#000000',
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            data: [
+['java.util.ArrayList::add',18.53],
+['java.lang.AbstractStringBuilder::&lt;init&gt;',18.35],
+['Planner::addPropagate',15.50],
+['Variable::<init>',9.26],
+['java.util.ArrayList::<init>',9.26],
+['others',29.10]
+            ]
+        }]
+    });
+});
+
+$(function () {
+    $('#topclasschart').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Top Allocation Classes'
+        },
+        tooltip: {
+    	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    color: '#000000',
+                    connectorColor: '#000000',
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            data: [
+['java.lang.Object[]',27.79],
+['java.util.ArrayList',25.56],
+['java.lang.String',9.28],
+['char[]',9.26],
+['Variable',9.26],
+['others',18.84]
+            ]
+        }]
+    });
+});		
+</script>
+  
+</body></html>

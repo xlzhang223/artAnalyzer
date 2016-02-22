@@ -1,0 +1,8061 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://v3.bootcss.com/examples/offcanvas/# -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="./image/waanan.jpg">
+
+<title>For love and peace</title>
+
+<!-- Bootstrap core CSS -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="./css/offcanvas.css" rel="stylesheet">
+
+<!-- Optional Bootstrap Theme -->
+<link href="data:text/css;charset=utf-8," data-href="./css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+
+<link href="./css/patch.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+
+<link href="./css/docs.min.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="./js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+<div class="container">
+<div class="navbar-header">
+<a id =“top” class="navbar-brand" href="index.html">LT</a>
+</div>
+<div id="navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li class="active"><a href="index.html">basic info</a></li>
+<li ><a href="mem.html">Mem Distribution</a></li>
+</ul>
+</div><!-- /.nav-collapse -->
+</div><!-- /.container -->
+</nav><!-- /.navbar -->
+
+<div class="container bs-docs-container">
+
+<div class="row">
+<div class="col-md-9" role="main">
+<div class="bs-docs-section">
+<h1 id="basicinfo" class="page-header"><a class="anchorjs-link " href="#basicinfo" aria-label="Anchor link for: glyphicons" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Basic Info</h1>
+
+<h2 id="psize"><a class="anchorjs-link " href="#psize" aria-label="Anchor link for: glyphicons glyphs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Program Size</h2>
+<div class="panel panel-default">
+<!-- Default panel contents -->
+<div class="panel-heading">Data</div>
+<!-- <div class="panel-body">
+<p></p>
+</div>-->
+
+<!-- Table -->
+<table class="table">
+<thead>
+<tr>
+<th>#</th>
+<th>Name</th>
+<th>Amounts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">1</th>
+<td>Total Classes</td>
+<td>
+1312
+</td>
+</tr>
+<tr>
+<th scope="row">2</th>
+<td>Total Methods</td>
+<td>
+122842
+</td>
+</tr>
+<tr>
+<th scope="row">3</th>
+<td>NEW OBJECTS</td>
+<td>
+80421
+</td>
+</tr>
+<tr>
+<th scope="row">4</th>
+<td>DEAD OBJECTS</td>
+<td>
+55416
+</td>
+</tr>
+<tr>
+<th scope="row">5</th>
+<td>MOVED OBJECTS</td>
+<td>
+52797
+</td>
+</tr>
+<tr>
+<th scope="row">6</th>
+<td>ACCESSED OBJECTS</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<th scope="row">7</th>
+<td>NO. GC</td>
+<td>
+11
+</td>
+</tr>
+<tr>
+<th scope="row">8</th>
+<td>No. ALLOCATION SITE</td>
+<td>
+2098
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 id="olife"><a class="anchorjs-link " href="#olife" aria-label="Anchor link for: glyphicons glyphs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Distribution of Object Life Cycle</h2>
+
+<div id="olifechart" style="min-width:600px;height:400px"></div>
+<div class="panel panel-default">
+<!-- Default panel contents -->
+<div class="panel-heading">Data</div>
+<!-- <div class="panel-body">
+<p></p>
+</div>-->
+
+<!-- Table -->
+<table class="table">
+<thead>
+<tr>
+<th>Gc Times</th>
+<th>Dead Percents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">0</th>
+<td>30.77%</td>
+</tr>
+<tr>
+<th scope="row">1</th>
+<td>23.70%</td>
+</tr>
+<tr>
+<th scope="row">2</th>
+<td>0.03%</td>
+</tr>
+<tr>
+<th scope="row">3</th>
+<td>0.30%</td>
+</tr>
+<tr>
+<th scope="row">4</th>
+<td>17.39%</td>
+</tr>
+<tr>
+<th scope="row">5</th>
+<td>5.27%</td>
+</tr>
+<tr>
+<th scope="row">6</th>
+<td>0.02%</td>
+</tr>
+<tr>
+<th scope="row">7</th>
+<td>0.04%</td>
+</tr>
+<tr>
+<th scope="row">8</th>
+<td>8.04%</td>
+</tr>
+<tr>
+<th scope="row">9</th>
+<td>0.56%</td>
+</tr>
+<tr>
+<th scope="row">10</th>
+<td>0.27%</td>
+</tr>
+<tr>
+<th scope="row">11</th>
+<td>13.62%</td>
+</tr>
+<tr>
+<th scope="row">12</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">13</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">14</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">15</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">16</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">17</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">18</th>
+<td>0.00%</td>
+</tr>
+<tr>
+<th scope="row">19</th>
+<td>0.00%</td>
+</tr>
+                  </tbody>
+                </table>
+              </div>
+    
+        <h2 id="topsite"><a class="anchorjs-link " href="#topsite" aria-label="Anchor link for: glyphicons glyphs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Top Sites</h2>
+        <div id="topsitechart" style="min-width:600px;height:400px"></div>
+        <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Data</div>
+<!--      <div class="panel-body">
+        <p></p>
+      </div>-->
+
+                <!-- Table -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Site</th>
+                      <th>No. obj</th>
+                      <th>Per. %</th>
+                      <th>Name</th>
+                      <th>No. obj</th>
+                      <th>Class Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+<tr>
+<th scope="row">72752085</th>
+<td>7342</td>
+<td>9.13</td>
+<td>java.lang.ref.FinalizerReference::add</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8656</td>
+<td>java.lang.String</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7066</td>
+<td>java.lang.ref.FinalizerReference</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6307</td>
+<td>int[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3915</td>
+<td>java.lang.Object[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2573</td>
+<td>java.util.ArrayList</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>621</td>
+<td>float[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>477</td>
+<td>android.widget.LinearLayout</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>189</td>
+<td>java.nio.DirectByteBuffer</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>144</td>
+<td>byte[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>58</td>
+<td>android.os.BinderProxy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>33</td>
+<td>android.graphics.Bitmap</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>30</td>
+<td>android.animation.StateListAnimator</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>24</td>
+<td>android.widget.FrameLayout</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>java.io.FileDescriptor</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.view.menu.ActionMenuItemView</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>com.android.internal.view.menu.ActionMenuItemView</td>
+</tr>
+<tr>
+<th scope="row">727183DD</th>
+<td>2889</td>
+<td>3.59</td>
+<td>N/A</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8656</td>
+<td>java.lang.String</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6307</td>
+<td>int[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3915</td>
+<td>java.lang.Object[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2443</td>
+<td>char[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>642</td>
+<td>java.lang.Class</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>350</td>
+<td>java.lang.StackTraceElement</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>90</td>
+<td>java.lang.String[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>63</td>
+<td>android.content.Intent</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>58</td>
+<td>android.os.BinderProxy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>54</td>
+<td>java.util.Locale</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>41</td>
+<td>java.lang.StackTraceElement[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>31</td>
+<td>java.lang.reflect.Constructor</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.system.ErrnoException</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>java.io.FileDescriptor</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>java.lang.ClassNotFoundException</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>java.util.SimpleTimeZone</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>android.system.StructStatVfs</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings$SecuritySearchIndexProvider</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AccountSettings</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary</td>
+</tr>
+<tr>
+<th scope="row">7357D925</th>
+<td>2518</td>
+<td>3.13</td>
+<td>com.android.internal.policy.PhoneWindow$DecorView::measure</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3257</td>
+<td>long[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1263</td>
+<td>android.util.LongSparseLongArray</td>
+</tr>
+<tr>
+<th scope="row">7271821F</th>
+<td>2246</td>
+<td>2.79</td>
+<td>N/A</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8656</td>
+<td>java.lang.String</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6307</td>
+<td>int[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2443</td>
+<td>char[]</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>54</td>
+<td>java.util.Locale</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>java.lang.ClassNotFoundException</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>java.lang.reflect.Method</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.text.TextWatcher[]</td>
+</tr>
+<tr>
+<th scope="row">7355A86F</th>
+<td>1823</td>
+<td>2.27</td>
+<td>android.view.RenderNode::create</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1829</td>
+<td>android.view.RenderNode</td>
+</tr>
+                  </tbody>
+                </table>
+              </div>
+  
+        <h2 id="leaksite"><a class="anchorjs-link " href="#leaksite" aria-label="Anchor link for: glyphicons glyphs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>May Leak Sites</h2>
+<div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Data</div>
+<!--      <div class="panel-body">
+        <p></p>
+      </div>-->
+                <!-- Table -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Num. Born</th>
+                      <th>Stale Mem. (bytes)</th>
+                      <th>Leak Conf</th>
+                      <th>Summary</th>
+                      <th>Sllocation Site</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+<tr>
+<th scope="row">7342</th>
+<td>80520</td>
+<td>263.05</td>
+<td>Highly Staled</td>
+<td>java.lang.ref.FinalizerReference::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>java.util.ArrayList(20bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>java.lang.Object[](0bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>java.io.FileDescriptor(12bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>byte[](0bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>java.lang.ref.FinalizerReference(36bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>int[](0bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>java.lang.String(0bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>android.os.BinderProxy(32bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>float[](0bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>android.widget.FrameLayout(572bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>android.graphics.Bitmap(47bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>android.widget.LinearLayout(600bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>java.nio.DirectByteBuffer(53bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>com.android.internal.view.menu.ActionMenuItemView(732bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>android.animation.StateListAnimator(36bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>com.android.internal.view.menu.ActionMenuItemView(732bytes)</td>
+</tr>
+<tr>
+<th scope="row">1119</th>
+<td>22647</td>
+<td>84.57</td>
+<td>Almost Never Accessed</td>
+<td>android.app.ActivityThread::performLaunchActivity</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>java.lang.Object[](0bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>int[](0bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>java.lang.String(0bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>java.lang.String[](0bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>android.content.ComponentName(16bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>java.lang.Class(0bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>com.android.settings.Settings(291bytes)</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>com.android.settings.Settings(291bytes)</td>
+</tr>
+                  </tbody>
+                </table>
+              </div>
+        
+        <h2 id="topclass"><a class="anchorjs-link " href="#topclass" aria-label="Anchor link for: glyphicons glyphs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Top Classes</h2>
+        <div id="topclasschart" style="min-width:600px;height:400px"></div>
+        <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Data</div>
+<!--      <div class="panel-body">
+        <p></p>
+      </div>-->
+                <!-- Table -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Site</th>
+                      <th>No. obj</th>
+                      <th>Per. %</th>
+                      <th>Name</th>
+                      <th>No. obj</th>
+                      <th>Alloc Site</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+<tr>
+<th scope="row">70185FF0</th>
+<td>8656</td>
+<td>10.76</td>
+<td>java.lang.String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7342</td>
+<td>java.lang.ref.FinalizerReference::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2889</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2246</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1820</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1730</td>
+<td>android.graphics.Outline::setRoundRect</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1669</td>
+<td>android.widget.LinearLayout::generateLayoutParams</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1359</td>
+<td>java.util.HashMap::addNewEntry</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1135</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1119</td>
+<td>android.app.ActivityThread::performLaunchActivity</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1035</td>
+<td>java.util.ArrayList::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1012</td>
+<td>android.graphics.drawable.ColorDrawable::setCallback</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>839</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>799</td>
+<td>java.util.ArrayList::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>738</td>
+<td>android.util.SparseArray::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>616</td>
+<td>android.widget.RelativeLayout$LayoutParams::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>564</td>
+<td>android.util.ArrayMap::allocArrays</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>503</td>
+<td>java.util.HashMap::makeTable</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>494</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>477</td>
+<td>android.content.res.StringBlock::get</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>467</td>
+<td>java.util.Properties::put</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>460</td>
+<td>android.graphics.drawable.ColorDrawable::setBounds</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>452</td>
+<td>java.util.ArrayList::iterator</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>347</td>
+<td>java.lang.Integer::valueOf</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>344</td>
+<td>com.android.internal.policy.PhoneWindow$DecorView::generateLayoutParams</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>338</td>
+<td>com.android.settings.dashboard.DashboardTile::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>319</td>
+<td>android.os.Parcel::readBundle</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>275</td>
+<td>android.widget.LinearLayout::measureHorizontal</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>247</td>
+<td>android.graphics.drawable.LayerDrawable$LayerState::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>242</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>218</td>
+<td>android.graphics.drawable.GradientDrawable::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>213</td>
+<td>com.android.internal.os.BatteryStatsHelper::getStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>206</td>
+<td>java.util.ArrayList::toArray</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>203</td>
+<td>java.util.regex.Matcher::usePattern</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>195</td>
+<td>com.android.dex.Dex::open</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>192</td>
+<td>android.content.res.DrawableCache::put</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>190</td>
+<td>java.lang.Float::valueOf</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>175</td>
+<td>com.android.internal.policy.PhoneWindow$DecorView::getListenerInfo</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>167</td>
+<td>java.util.LinkedHashMap::addNewEntry</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>163</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>158</td>
+<td>android.content.res.TypedArray::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>144</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>138</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>137</td>
+<td>com.android.settings.dashboard.DashboardSummary::rebuildUI</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>130</td>
+<td>com.android.dex.Dex$Section::readString</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>116</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>114</td>
+<td>java.lang.Double::valueOf</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>111</td>
+<td>android.content.res.Resources$Theme::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>102</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>99</td>
+<td>dalvik.system.CloseGuard::open</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>84</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>76</td>
+<td>android.content.res.Configuration::readFromParcel</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>75</td>
+<td>java.util.ArrayList::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>74</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>74</td>
+<td>android.preference.PreferenceGroup::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>72</td>
+<td>android.database.sqlite.SQLiteDatabase::insertWithOnConflict</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>70</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>70</td>
+<td>java.util.concurrent.CopyOnWriteArrayList::iterator</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>66</td>
+<td>android.content.res.TypedArray::obtain</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>66</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>60</td>
+<td>android.view.inputmethod.InputMethodInfo$1::createFromParcel</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>58</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>58</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid$Wakelock::readTimerFromParcel</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>57</td>
+<td>android.widget.TextView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>57</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>51</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>50</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>50</td>
+<td>android.os.Parcel::readStringArray</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>49</td>
+<td>android.widget.ListView::generateLayoutParams</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>48</td>
+<td>android.database.sqlite.SQLiteConnection::prepare</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>48</td>
+<td>android.content.res.ColorStateList::inflate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>47</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>47</td>
+<td>dalvik.system.CloseGuard::get</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>46</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>45</td>
+<td>android.database.sqlite.SQLiteConnection$OperationLog::beginOperation</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>44</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>44</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid$Pkg::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>42</td>
+<td>android.os.StrictMode$ViolationInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>42</td>
+<td>android.content.Intent::parseIntent</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>40</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>38</td>
+<td>com.android.internal.os.BatteryStatsImpl::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>38</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>38</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid$Pkg::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>36</td>
+<td>com.android.settings.dashboard.DashboardCategory::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>35</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>35</td>
+<td>com.android.internal.widget.ActionBarOverlayLayout::generateLayoutParams</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>35</td>
+<td>android.content.res.TypedArray::extractThemeAttrs</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>34</td>
+<td>java.lang.Long::valueOf</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>34</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>34</td>
+<td>android.text.SpannableStringBuilder::toString</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>34</td>
+<td>com.android.internal.logging.EventLogTags::writeSysuiViewVisibility</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>33</td>
+<td>java.lang.ThreadLocal$Values::initializeTable</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>32</td>
+<td>android.net.Uri$Part::from</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>32</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>32</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>31</td>
+<td>libcore.icu.NativeDecimalFormat$FieldPositionIterator::forFieldPosition</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>30</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>29</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>29</td>
+<td>com.android.internal.view.ActionBarPolicy::get</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>28</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>28</td>
+<td>android.hardware.SystemSensorManager::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>28</td>
+<td>com.android.internal.os.BatteryStatsHelper::processAppUsage</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>25</td>
+<td>com.android.settings.search.Index::addIndexablesFromRemoteProvider</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>25</td>
+<td>dalvik.system.DexPathList::makePathElements</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>24</td>
+<td>android.net.Uri$StringUri::buildUpon</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>24</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>24</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>22</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>22</td>
+<td>java.util.WeakHashMap::put</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>22</td>
+<td>android.animation.AnimatorSet::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>21</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>21</td>
+<td>android.graphics.drawable.ColorDrawable::mutate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>21</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td>android.transition.TransitionInflater::from</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td>android.preference.SwitchPreference::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>19</td>
+<td>android.os.Message::obtain</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>19</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>19</td>
+<td>android.view.animation.PathInterpolator::initPath</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>19</td>
+<td>android.widget.OverScroller::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+<td>android.transition.TransitionSet::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+<td>java.util.IdentityHashMap::newElementArray</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>17</td>
+<td>com.android.settings.search.Index::normalizeString</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>17</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+<td>android.preference.PreferenceManager::inflateFromResource</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+<td>android.preference.PreferenceScreen::onCreateRootAdapter</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>15</td>
+<td>android.app.ResourcesManager::getTopLevelResources</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>15</td>
+<td>android.content.SyncAdapterType$1::createFromParcel</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>15</td>
+<td>com.android.internal.view.menu.MenuBuilder::createNewMenuItem</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>15</td>
+<td>android.content.res.Resources::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>14</td>
+<td>android.preference.GenericInflater::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>14</td>
+<td>java.util.Formatter$FormatSpecifierParser::parseFormatToken</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>14</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>13</td>
+<td>android.app.LoadedApk$ReceiverDispatcher::performReceive</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>13</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.net.Uri$PathSegmentsBuilder::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.content.ComponentName::readFromParcel</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>com.android.internal.os.BatteryStatsHelper::create</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.content.Intent::parseIntent</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.net.Uri$PathPart::getPathSegments</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>android.widget.ActionMenuView::generateLayoutParams</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>android.os.StrictMode$AndroidBlockGuardPolicy::handleViolationWithTimingAttempt</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.settings.SecuritySettings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>com.android.internal.os.BatteryStatsImpl$Counter::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>android.accounts.AuthenticatorDescription$1::createFromParcel</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>android.view.MenuInflater::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>android.widget.ProgressBar::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>com.android.settings.search.DynamicIndexableContentMonitor::register</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>com.android.internal.policy.PhoneLayoutInflater::setPrivateFactory</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>android.os.Parcel::createStringArray</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>android.graphics.drawable.LayerDrawable::inflateLayers</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.Toolbar::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.Toolbar::setPopupTheme</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.content.res.ColorStateList::valueOf</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.settings.fuelgauge.BatteryHistoryPreference::onBindView</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.internal.policy.PhoneWindow::generateLayout</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.database.sqlite.SQLiteDirectCursorDriver::query</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>android.content.Intent::setClass</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>java.util.concurrent.locks.ReentrantLock::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.graphics.drawable.VectorDrawable::inflateInternal</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.content.Intent::readFromParcel</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.database.sqlite.SQLiteDatabase::compileStatement</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.app.ResourcesManager::applyConfigurationToResourcesLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>com.android.internal.net.NetworkStatsFactory::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>java.io.File::getCanonicalFile</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>android.security.keystore.AndroidKeyStoreProvider::install</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>com.android.settings.accounts.AccountSettings::newAddAccountPreference</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>android.view.InputDevice::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>android.widget.PopupWindow::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>com.android.settings.fuelgauge.BatteryEntry::-getcom_android_internal_os_BatterySipper$DrainTypeSwitchesValues</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid$Sensor::readTimerFromParcel</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.search.Index::getSearchIndexProvider</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.server.NetworkManagementSocketTagger::install</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.SecuritySettings::maybeAddFingerprintPreference</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.search.Index$UpdateIndexTask::delete</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.graphics.drawable.GradientDrawable$GradientState::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.dashboard.DashboardSummary::rebuildUI</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.search.Index$UpdateIndexTask::isLocaleAlreadyIndexed</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.search.DynamicIndexableContentMonitor::register</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.search.DynamicIndexableContentMonitor::register</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.search.DynamicIndexableContentMonitor::register</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.fuelgauge.BatteryHistoryChart::setStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.text.method.SingleLineTransformationMethod::getInstance</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.PrivacySettings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.text.format.Formatter::formatShortElapsedTime</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.Utils::getBatteryStatus</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>java.text.SimpleDateFormat::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.internal.os.BatteryStatsImpl::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.PrivacySettings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.PrivacySettings::getNonVisibleKeys</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.PrivacySettings::updateToggles</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::updateOneRow</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.PrivacySettings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::updateOneRow</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.fuelgauge.PowerUsageBase::onResume</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::normalizeHyphen</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::normalizeHyphen</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::getCoalescedUsageList</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Utils::getBatteryLevel</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Utils::getBatteryLevel</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Utils::getBatteryStatus</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.fuelgauge.BatteryHistoryChart$DateLabel::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index$UpdateIndexTask::processDataToDelete</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index$UpdateIndexTask::processDataToDelete</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index$UpdateIndexTask::processDataToDelete</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AccountSettings$ManagedProfileBroadcastReceiver::register</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onSaveInstanceState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.fuelgauge.BatteryHistoryChart$TimeLabel::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Utils::isWifiOnly</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onSaveInstanceState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AccountSettings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AccountSettings::updateUi</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AuthenticatorHelper::buildAccountTypeToAuthoritiesMap</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onSaveInstanceState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AuthenticatorHelper::buildAccountTypeToAuthoritiesMap</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AuthenticatorHelper::buildAccountTypeToAuthoritiesMap</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AccountSettings::updateProfileUi</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AccountSettings::getAccountTypePreferences</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AccountSettings::getAccountTypePreferences</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AccountSettings::getAccountTypePreferences</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.PrivacySettings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onSaveInstanceState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AccountSettings$ManagedProfileBroadcastReceiver::register</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onSaveInstanceState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index$UpdateIndexTask::processDataToUpdate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::indexFromResource</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::indexFromResource</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AuthenticatorHelper::listenToAccountUpdates</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.accounts.AuthenticatorHelper::listenToAccountUpdates</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::indexFromResource</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.PrivacySettings::getNonVisibleKeys</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onSaveInstanceState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.PrivacySettings::getNonVisibleKeys</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.PrivacySettings::getNonVisibleKeys</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.DynamicIndexableContentMonitor::register</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.IndexDatabaseHelper::onOpen</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.IndexDatabaseHelper::getBuildVersion</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.IndexDatabaseHelper::onOpen</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index$UpdateIndexTask::isLocaleAlreadyIndexed</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index$UpdateIndexTask::isLocaleAlreadyIndexed</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index$UpdateIndexTask::isLocaleAlreadyIndexed</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index$UpdateIndexTask::processDataToUpdate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index$UpdateIndexTask::processDataToUpdate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index$UpdateIndexTask::processDataToUpdate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onResume</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.DynamicIndexableContentMonitor::register</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.IndexDatabaseHelper::onOpen</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.DynamicIndexableContentMonitor::register</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.dashboard.DashboardSummary::onResume</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.dashboard.DashboardSummary::onResume</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.dashboard.DashboardSummary::onResume</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.dashboard.DashboardSummary::onResume</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.dashboard.DashboardSummary::onResume</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Utils::isBatteryPresent</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Utils::showSimCardTile</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.support.v4.content.FileProvider::parsePathStrategy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.support.v4.content.FileProvider::parsePathStrategy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.support.v4.content.FileProvider::parsePathStrategy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.support.v4.content.FileProvider::parsePathStrategy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.support.v4.content.FileProvider::parsePathStrategy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.support.v4.content.FileProvider::parsePathStrategy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.support.v4.content.FileProvider::parsePathStrategy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::getInstance</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::update</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::isWellKnownProvider</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::buildUriForXmlResources</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::buildUriForXmlResources</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::buildUriForRawData</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.Index::buildUriForNonIndexableKeys</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.search.IndexDatabaseHelper::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::maybeAddFingerprintPreference</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Utils::onBuildStartFragmentIntent</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Utils::onBuildStartFragmentIntent</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Utils::onBuildStartFragmentIntent</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Utils::onBuildStartFragmentIntent</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Utils::onBuildStartFragmentIntent</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SubSettings::isValidFragment</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SubSettings::isValidFragment</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.widget.FloatingActionButton::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::maybeAddFingerprintPreference</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::addTrustAgentSettings</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::isNonMarketAppsAllowed</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.Utils::isBandwidthControlEnabled</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.dashboard.DashboardSummary::rebuildUI</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.settings.dashboard.DashboardSummary::rebuildUI</td>
+</tr>
+<tr>
+<th scope="row">702FAD60</th>
+<td>7066</td>
+<td>8.79</td>
+<td>java.lang.ref.FinalizerReference</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7342</td>
+<td>java.lang.ref.FinalizerReference::add</td>
+</tr>
+<tr>
+<th scope="row">701864D0</th>
+<td>6307</td>
+<td>7.84</td>
+<td>int[]</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7342</td>
+<td>java.lang.ref.FinalizerReference::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2889</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2246</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1669</td>
+<td>android.widget.LinearLayout::generateLayoutParams</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1359</td>
+<td>java.util.HashMap::addNewEntry</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1135</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1119</td>
+<td>android.app.ActivityThread::performLaunchActivity</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1035</td>
+<td>java.util.ArrayList::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1012</td>
+<td>android.graphics.drawable.ColorDrawable::setCallback</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>839</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>784</td>
+<td>android.view.View::onCreateDrawableState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>738</td>
+<td>android.util.SparseArray::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>616</td>
+<td>android.widget.RelativeLayout$LayoutParams::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>564</td>
+<td>android.util.ArrayMap::allocArrays</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>477</td>
+<td>android.content.res.StringBlock::get</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>460</td>
+<td>android.graphics.drawable.ColorDrawable::setBounds</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>452</td>
+<td>java.util.ArrayList::iterator</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>338</td>
+<td>com.android.settings.dashboard.DashboardTile::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>302</td>
+<td>android.widget.RelativeLayout$LayoutParams::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>284</td>
+<td>android.util.ArrayMap::allocArrays</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>275</td>
+<td>android.widget.LinearLayout::measureHorizontal</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>274</td>
+<td>android.widget.LinearLayout::measureHorizontal</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>242</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>218</td>
+<td>android.graphics.drawable.RippleDrawable::ensurePadding</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>213</td>
+<td>com.android.internal.os.BatteryStatsHelper::getStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>203</td>
+<td>java.util.regex.Matcher::usePattern</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>195</td>
+<td>android.graphics.drawable.RippleDrawable::ensurePadding</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>195</td>
+<td>android.graphics.drawable.RippleDrawable::ensurePadding</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>195</td>
+<td>android.graphics.drawable.RippleDrawable::ensurePadding</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>194</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>167</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>137</td>
+<td>com.android.settings.dashboard.DashboardSummary::rebuildUI</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>130</td>
+<td>android.content.res.TypedArray::obtain</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>130</td>
+<td>android.content.res.TypedArray::obtain</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>130</td>
+<td>com.android.dex.Dex$Section::readString</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>116</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>111</td>
+<td>android.content.res.Resources$Theme::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>108</td>
+<td>android.os.BinderProxy::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>99</td>
+<td>dalvik.system.CloseGuard::open</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>87</td>
+<td>android.app.LoadedApk$ReceiverDispatcher::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>80</td>
+<td>com.android.internal.os.BatteryStatsImpl::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>75</td>
+<td>java.util.ArrayList::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>74</td>
+<td>android.preference.PreferenceGroup::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>66</td>
+<td>android.content.res.TypedArray::obtain</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>57</td>
+<td>android.content.res.TypedArray::obtain</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>51</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>49</td>
+<td>android.text.SpannableStringBuilder::setSpan</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>49</td>
+<td>android.widget.ListView::generateLayoutParams</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>48</td>
+<td>com.android.internal.policy.PhoneLayoutInflater::createViewFromTag</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>48</td>
+<td>android.content.res.ColorStateList::inflate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>44</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>44</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid$Pkg::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>41</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>38</td>
+<td>com.android.internal.os.BatteryStatsImpl::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>36</td>
+<td>com.android.settings.dashboard.DashboardCategory::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>36</td>
+<td>android.os.StrictMode$AndroidBlockGuardPolicy::onReadFromDisk</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>35</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>35</td>
+<td>android.content.res.TypedArray::extractThemeAttrs</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>34</td>
+<td>android.text.SpannableStringBuilder::toString</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>33</td>
+<td>android.content.res.ColorStateList::obtainForTheme</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>33</td>
+<td>java.lang.ThreadLocal$Values::initializeTable</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>32</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>32</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>32</td>
+<td>android.content.res.ColorStateList::inflate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>31</td>
+<td>libcore.icu.NativeDecimalFormat$FieldPositionIterator::forFieldPosition</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>31</td>
+<td>com.android.internal.os.BatteryStatsHelper::processAppUsage</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>30</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>30</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>29</td>
+<td>android.content.res.ColorStateList::inflate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>28</td>
+<td>com.android.internal.os.BatteryStatsHelper::processAppUsage</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>27</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>25</td>
+<td>com.android.settings.search.Index::addIndexablesFromRemoteProvider</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>25</td>
+<td>dalvik.system.DexPathList::makePathElements</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>24</td>
+<td>android.text.method.SingleLineTransformationMethod::getTransformation</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>23</td>
+<td>android.view.inputmethod.InputMethodInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>21</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td>android.app.ActivityThread::handleLaunchActivity</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td>android.os.storage.StorageManager::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td>android.preference.SwitchPreference::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>19</td>
+<td>android.os.Message::obtain</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>19</td>
+<td>android.hardware.fingerprint.FingerprintManager::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+<td>android.content.res.Resources$ThemeKey::append</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+<td>android.database.MatrixCursor::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>17</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>17</td>
+<td>android.widget.Toolbar::onSaveInstanceState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>17</td>
+<td>com.android.settings.search.Index::getDataKeywords</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>17</td>
+<td>com.android.settings.search.Index::normalizeString</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+<td>android.app.FragmentManagerImpl::saveAllState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+<td>java.nio.charset.CharsetEncoderICU::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+<td>android.preference.PreferenceScreen::onCreateRootAdapter</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+<td>android.preference.PreferenceManager::inflateFromResource</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+<td>android.widget.ActionMenuPresenter::onSaveInstanceState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>15</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>15</td>
+<td>com.android.settings.Settings::onResume</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>14</td>
+<td>android.hardware.input.InputManager::registerInputDeviceListener</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>13</td>
+<td>android.util.SparseIntArray::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.view.KeyEvent$DispatcherState::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.accounts.IAccountManager$Stub$Proxy::getAuthenticatorTypes</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>com.android.internal.os.BatteryStatsHelper::create</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.content.IContentService$Stub$Proxy::getSyncAdapterTypesAsUser</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>com.android.internal.telephony.ISub$Stub$Proxy::getActiveSubscriptionInfoList</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.widget.ActionMenuPresenter::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.transition.ChangeBounds::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.print.IPrintManager$Stub::asInterface</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>com.android.internal.view.IInputMethodManager$Stub$Proxy::getInputMethodList</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>android.app.FragmentManagerImpl::saveAllState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>com.android.settings.widget.SwitchBar::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>android.app.FragmentManagerImpl::saveAllState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>android.os.BatteryStats$HistoryItem::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>android.preference.PreferenceFragment::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>android.preference.PreferenceFragment::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>android.widget.TextView::setText</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.settings.search.DynamicIndexableContentMonitor::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.settings.search.DynamicIndexableContentMonitor::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.internal.widget.ILockSettings$Stub::asInterface</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid$Pkg::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>android.preference.PreferenceFragment::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.settings.SecuritySettings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>android.print.PrintManager::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>android.widget.ActionMenuPresenter::bindItemView</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>com.android.settings.widget.SwitchBar::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>android.database.sqlite.SQLiteCursor::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>android.preference.PreferenceGroupAdapter::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>com.android.settings.search.Index::updateInternal</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>android.preference.PreferenceGroupAdapter::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>com.android.settings.search.DynamicIndexableContentMonitor::register</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>com.android.settings.widget.FloatingActionButton::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>android.view.accessibility.IAccessibilityManager$Stub$Proxy::getInstalledAccessibilityServiceList</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>com.android.settings.SettingsPreferenceFragment::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.internal.os.KernelUidCpuTimeReader::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.internal.telephony.ICarrierConfigLoader$Stub::asInterface</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.internal.app.IBatteryStats$Stub::asInterface</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.settings.accounts.AccountSettings::onPrepareOptionsMenu</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::getCoalescedUsageList</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.AutoCompleteTextView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.hardware.fingerprint.IFingerprintService$Stub::asInterface</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.AutoCompleteTextView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.AutoCompleteTextView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.net.NetworkStats::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.settings.fuelgauge.BatteryHistoryChart::addDateLabel</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.settings.fuelgauge.BatteryHistoryChart::addTimeLabel</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::getCoalescedUsageList</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.support.v4.content.FileProvider::parsePathStrategy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.net.NetworkStats::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.net.NetworkStats::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.content.res.Resources$ThemeKey::append</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.View$AttachInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.View$AttachInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.View$AttachInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.print.IPrintManager$Stub$Proxy::getInstalledPrintServices</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.settings.dashboard.DashboardSummary::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.settings.dashboard.DashboardSummary::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.widget.Toolbar::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.graphics.drawable.AnimatedStateListDrawable$AnimationDrawableTransition::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.settings.accounts.AccountSettings::getAccountTypePreferences</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.settings.PrivacySettings::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>com.android.settings.fuelgauge.BatteryHistoryChart::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>android.graphics.drawable.AnimatedStateListDrawable::selectTransition</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>android.content.res.ColorStateList::valueOf</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>android.app.FragmentManagerImpl::saveAllState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>com.android.settings.accounts.AccountSettings::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>com.android.settings.accounts.AccountSettings::updateProfileUi</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>android.widget.Editor::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>com.android.settings.fuelgauge.PowerUsageBase::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>android.hardware.fingerprint.FingerprintManager::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>com.android.settings.fuelgauge.PowerUsageBase::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>com.android.settings.fuelgauge.BatteryHistoryChart::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>com.android.settings.SecuritySettings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>com.android.settings.search.Index::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.os.StrictMode$AndroidBlockGuardPolicy::onWriteToDisk</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>com.android.settings.accounts.AccountSettings::updateProfileUi</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>android.content.res.Resources::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>com.android.settings.fuelgauge.BatteryEntry::-getcom_android_internal_os_BatterySipper$DrainTypeSwitchesValues</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>android.util.SparseLongArray::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::onAttach</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>android.graphics.drawable.StateListDrawable$StateListState::mutate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.os.Parcel::readException</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.internal.os.BatteryStatsImpl::startIteratingHistoryLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.widget.PopupWindow::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.widget.PopupWindow::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.widget.Editor$CursorAnchorInfoNotifier::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.graphics.drawable.AnimatedStateListDrawable$FrameInterpolator::updateFrames</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>org.kxml2.io.KXmlParser::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.graphics.drawable.AnimatedStateListDrawable$AnimationDrawableTransition::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.os.Parcel::createIntArray</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>java.lang.RealToString::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.util.ArraySet::allocArrays</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>java.nio.charset.CharsetDecoderICU::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.internal.os.PowerProfile::readPowerValuesFromXml</td>
+</tr>
+<tr>
+<th scope="row">7022E430</th>
+<td>5350</td>
+<td>6.65</td>
+<td>android.graphics.Rect</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1730</td>
+<td>android.graphics.Outline::setRoundRect</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>460</td>
+<td>android.graphics.drawable.ColorDrawable::setBounds</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>431</td>
+<td>android.graphics.drawable.ColorDrawable::getBounds</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>219</td>
+<td>android.graphics.drawable.LayerDrawable::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>219</td>
+<td>android.graphics.drawable.LayerDrawable::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>219</td>
+<td>android.graphics.drawable.LayerDrawable::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>193</td>
+<td>android.graphics.drawable.RippleDrawable::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>193</td>
+<td>android.graphics.drawable.RippleDrawable::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>193</td>
+<td>android.graphics.drawable.RippleDrawable::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>193</td>
+<td>android.graphics.drawable.RippleDrawable::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>158</td>
+<td>android.widget.FrameLayout::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>158</td>
+<td>android.widget.FrameLayout::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>155</td>
+<td>android.graphics.drawable.NinePatchDrawable::updateLocalState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>149</td>
+<td>android.widget.RelativeLayout::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>149</td>
+<td>android.widget.RelativeLayout::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>114</td>
+<td>android.graphics.drawable.BitmapDrawable::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>45</td>
+<td>android.graphics.drawable.VectorDrawable::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>38</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>31</td>
+<td>android.graphics.drawable.InsetDrawable::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>21</td>
+<td>android.graphics.drawable.BitmapDrawable::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.widget.EdgeEffect::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.view.ViewTreeObserver$InternalInsetsInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.view.ViewTreeObserver$InternalInsetsInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.view.WindowManager$LayoutParams::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.view.WindowInsets::getSystemWindowInsets</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>android.widget.TextView$Drawables::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.View$AttachInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.widget.Switch::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.View$AttachInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.View$AttachInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.WindowInsets::replaceSystemWindowInsets</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.animation.Transformation::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.View$AttachInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.View$AttachInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.View$AttachInfo::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.policy.PhoneWindow::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.widget.FrameLayout::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.widget.FrameLayout::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.policy.PhoneWindow$DecorView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.policy.PhoneWindow$DecorView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.policy.PhoneWindow$DecorView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.policy.PhoneWindow$DecorView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.widget.ActionBarOverlayLayout::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.widget.ActionBarOverlayLayout::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.widget.ActionBarOverlayLayout::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.widget.ActionBarOverlayLayout::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.widget.ActionBarOverlayLayout::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.widget.ActionBarOverlayLayout::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.view.ViewRootImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.widget.ListView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.widget.ListView::setSelector</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.graphics.drawable.AnimatedStateListDrawable$AnimatedStateListState::getConstantPadding</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>android.graphics.drawable.AnimatedStateListDrawable$AnimatedStateListState::getConstantPadding</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.widget.ListPopupWindow::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.widget.PopupWindow::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.graphics.drawable.GradientDrawable$GradientState::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.view.FocusFinder$SequentialFocusComparator::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.view.FocusFinder$SequentialFocusComparator::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.view.FocusFinder::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.view.FocusFinder::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.view.FocusFinder::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.view.inputmethod.InputMethodManager::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.view.inputmethod.InputMethodManager::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.internal.widget.ActionBarOverlayLayout::setBackgroundDrawable</td>
+</tr>
+<tr>
+<th scope="row">701857E8</th>
+<td>3915</td>
+<td>4.87</td>
+<td>java.lang.Object[]</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7342</td>
+<td>java.lang.ref.FinalizerReference::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2889</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1730</td>
+<td>android.graphics.Outline::setRoundRect</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1669</td>
+<td>android.widget.LinearLayout::generateLayoutParams</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1359</td>
+<td>java.util.HashMap::addNewEntry</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1135</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1119</td>
+<td>android.app.ActivityThread::performLaunchActivity</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1035</td>
+<td>java.util.ArrayList::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1012</td>
+<td>android.graphics.drawable.ColorDrawable::setCallback</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>799</td>
+<td>java.util.ArrayList::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>784</td>
+<td>android.view.View::onCreateDrawableState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>738</td>
+<td>android.util.SparseArray::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>572</td>
+<td>android.widget.RelativeLayout$DependencyGraph$Node::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>564</td>
+<td>android.util.ArrayMap::allocArrays</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>477</td>
+<td>android.content.res.StringBlock::get</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>452</td>
+<td>java.util.ArrayList::iterator</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>396</td>
+<td>android.transition.TransitionValuesMaps::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>338</td>
+<td>com.android.settings.dashboard.DashboardTile::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>298</td>
+<td>android.widget.RelativeLayout$DependencyGraph::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>264</td>
+<td>android.transition.TransitionValuesMaps::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>213</td>
+<td>com.android.internal.os.BatteryStatsHelper::getStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>206</td>
+<td>java.util.ArrayList::toArray</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>194</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>192</td>
+<td>android.content.res.DrawableCache::put</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>190</td>
+<td>java.lang.Float::valueOf</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>167</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>151</td>
+<td>java.util.ArrayDeque::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>137</td>
+<td>com.android.settings.dashboard.DashboardSummary::rebuildUI</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>130</td>
+<td>com.android.dex.Dex$Section::readString</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>116</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>108</td>
+<td>android.os.BinderProxy::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>81</td>
+<td>android.animation.AnimatorSet::start</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>80</td>
+<td>com.android.internal.os.BatteryStatsImpl::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>75</td>
+<td>java.util.ArrayList::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>74</td>
+<td>android.preference.PreferenceGroup::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>70</td>
+<td>java.util.concurrent.CopyOnWriteArrayList::iterator</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>68</td>
+<td>com.android.settings.search.SettingsSearchIndexablesProvider::queryXmlResources</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>60</td>
+<td>android.view.ViewRootImpl$RunQueue::removeCallbacks</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>57</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>54</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>52</td>
+<td>android.animation.PropertyValuesHolder$FloatPropertyValuesHolder::setupSetterAndGetter</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>52</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>52</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>51</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>49</td>
+<td>android.widget.ListView::generateLayoutParams</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>49</td>
+<td>android.text.SpannableStringBuilder::setSpan</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>48</td>
+<td>com.android.internal.policy.PhoneLayoutInflater::createViewFromTag</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>46</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>44</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>44</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid$Pkg::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>41</td>
+<td>java.util.concurrent.CopyOnWriteArrayList::add</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>36</td>
+<td>com.android.settings.dashboard.DashboardCategory::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>35</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>34</td>
+<td>com.android.internal.logging.EventLogTags::writeSysuiViewVisibility</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>33</td>
+<td>java.lang.ThreadLocal$Values::initializeTable</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>31</td>
+<td>com.android.internal.os.BatteryStatsHelper::processAppUsage</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>29</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>29</td>
+<td>com.android.internal.view.ActionBarPolicy::get</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>28</td>
+<td>com.android.internal.os.BatteryStatsHelper::processAppUsage</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>27</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>24</td>
+<td>android.text.method.SingleLineTransformationMethod::getTransformation</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>24</td>
+<td>android.database.sqlite.SQLiteDatabase::insertWithOnConflict</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>21</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>21</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td>android.os.storage.StorageManager::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td>android.app.ActivityThread::handleLaunchActivity</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td>android.preference.SwitchPreference::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>19</td>
+<td>android.hardware.fingerprint.FingerprintManager::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>19</td>
+<td>java.util.concurrent.CopyOnWriteArrayList::removeRange</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+<td>java.util.IdentityHashMap::newElementArray</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+<td>android.database.MatrixCursor::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>17</td>
+<td>com.android.settings.search.Index::normalizeString</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>17</td>
+<td>android.widget.Toolbar::onSaveInstanceState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+<td>android.preference.PreferenceScreen::onCreateRootAdapter</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+<td>android.widget.ActionMenuPresenter::onSaveInstanceState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+<td>android.app.FragmentManagerImpl::saveAllState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>15</td>
+<td>com.android.settings.Settings::onResume</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>15</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>14</td>
+<td>android.app.ActivityThread::handleResumeActivity</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>14</td>
+<td>android.preference.GenericInflater::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>14</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>com.android.internal.telephony.ISub$Stub$Proxy::getActiveSubscriptionInfoList</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.app.BackStackRecord::run</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.app.BackStackRecord::run</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.hardware.display.DisplayManager::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.widget.ActionMenuPresenter::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.print.IPrintManager$Stub::asInterface</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.widget.ActionMenuPresenter::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.content.IContentService$Stub$Proxy::getSyncAdapterTypesAsUser</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>android.accounts.IAccountManager$Stub$Proxy::getAuthenticatorTypes</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+<td>com.android.internal.view.IInputMethodManager$Stub$Proxy::getInputMethodList</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>android.app.FragmentManagerImpl::saveAllState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>android.preference.PreferenceFragment::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>android.preference.PreferenceFragment::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>android.app.FragmentManagerImpl::saveAllState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+<td>com.android.settings.widget.SwitchBar::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.internal.os.BatteryStatsImpl$Uid$Pkg::readFromParcelLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.internal.widget.ILockSettings$Stub::asInterface</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.settings.Settings::onCreate</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>android.app.FragmentManagerImpl::saveFragmentViewState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>android.app.ActivityThread::performPauseActivity</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>android.widget.TextView::setText</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>android.app.ActivityThread::performResumeActivity</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.internal.policy.PhoneWindow::saveHierarchyState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.internal.policy.PhoneWindow::saveHierarchyState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.internal.view.menu.MenuBuilder::dispatchSaveInstanceState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>com.android.internal.policy.PhoneWindow::saveHierarchyState</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>android.preference.PreferenceGroupAdapter::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>android.preference.PreferenceGroupAdapter::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>android.view.MenuInflater::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+<td>com.android.settings.widget.SwitchBar::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>com.android.settings.search.DynamicIndexableContentMonitor::register</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>android.view.ViewRootImpl$InvalidateOnAnimationRunnable::run</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>android.view.accessibility.IAccessibilityManager$Stub$Proxy::getInstalledAccessibilityServiceList</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.internal.os.KernelUidCpuTimeReader::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.internal.telephony.ICarrierConfigLoader$Stub::asInterface</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.settings.accounts.AccountSettings::onPrepareOptionsMenu</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.internal.app.IBatteryStats$Stub::asInterface</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.hardware.fingerprint.IFingerprintService$Stub::asInterface</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>com.android.settings.SecuritySettings::createPreferenceHierarchy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.AutoCompleteTextView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.SearchView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.AutoCompleteTextView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+<td>android.widget.AutoCompleteTextView::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.graphics.drawable.AnimatedStateListDrawable$AnimationDrawableTransition::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::getCoalescedUsageList</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>java.util.ArrayList::addAll</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.support.v4.content.FileProvider::parsePathStrategy</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.print.IPrintManager$Stub$Proxy::getInstalledPrintServices</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>android.app.ActivityThread::scheduleContextCleanup</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.settings.accounts.AccountSettings::getAccountTypePreferences</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>com.android.settings.PrivacySettings::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.os.storage.StorageManager$ObbActionListener::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.widget.Editor$ProcessTextIntentActionsHandler::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.util.Pools$SimplePool::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.content.res.StringBlock::get</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.database.MatrixCursor::ensureCapacity</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+<td>android.widget.Editor$ProcessTextIntentActionsHandler::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>android.os.AsyncTask::postResult</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.hardware.SystemSensorManager::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.fuelgauge.BatteryHistoryChart::setStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.text.format.Formatter::formatShortElapsedTime</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.fuelgauge.PowerUsageSummary::getCoalescedUsageList</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.settings.accounts.AccountSettings::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.hardware.display.DisplayManagerGlobal::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.view.inputmethod.InputMethodManager::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>android.hardware.input.InputManager::populateInputDevicesLocked</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.internal.os.BatteryStatsImpl::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.internal.os.BatteryStatsHelper::refreshStats</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>com.android.internal.os.BatteryStatsHelper::&lt;init&gt;</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>com.android.internal.os.ZygoteInit$MethodAndArgsCaller::run</td>
+</tr>
+<tr>
+<th scope="row"></th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>android.util.ArraySet::allocArrays</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3" role="complementary">
+<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+<ul class="nav bs-docs-sidenav">
+
+<li class="">
+<p style="color: #FFFFFF" >nav</p>
+</li>
+<li class="">
+<a href="#psize">Program Size</a>
+</li>
+
+<li class=""><a href="#olife">Distribution of Object Life Cycle</a></li>
+<li class=""><a href="#topsite">Top Sites</a></li>
+<li class=""><a href="#leaksite">May Leak SItes</a></li>
+<li class=""><a href="#topclass">Top Classes</a></li>
+</ul>
+<a class="back-to-top" href="#top">
+返回顶部
+</a>
+
+</nav>
+</div>
+
+</div>
+
+
+
+
+
+<hr>
+
+<footer>
+<p>© waanan 2015</p>
+</footer>
+
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/docs.min.js"></script>
+
+<script type="text/javascript" src="./js/highcharts.js"></script>
+<!-- <script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/exporting.js"></script>-->
+<script type="text/javascript" src="./js/highcharts-3d.js"></script>
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="./js/ie10-viewport-bug-workaround.js"></script>
+
+<script src="./js/offcanvas.js"></script>
+
+<script type="text/javascript">
+$(function () {
+$('#olifechart').highcharts({
+chart: {
+type: 'column',
+margin: 75,
+options3d: {
+enabled: true,
+alpha: 10,
+beta: 25,
+depth: 70
+}
+},
+title: {
+text: 'Objects Life Cycle'
+},
+subtitle: {
+text: ''
+},
+plotOptions: {
+column: {
+depth: 25
+}
+},
+xAxis: {
+categories: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+},
+yAxis: {
+opposite: true
+},
+series: [{
+name: 'per',
+data: [
+30.77,23.70,0.03,0.30,17.39,5.27,0.02,0.04,8.04,0.56,0.27,13.62,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00                        ]
+        }]
+    });
+});
+
+$(function () {
+    $('#topsitechart').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Top Allocation Sites'
+        },
+        tooltip: {
+    	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    color: '#000000',
+                    connectorColor: '#000000',
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            data: [
+['java.lang.ref.FinalizerReference::add',9.13],
+['N/A',3.59],
+['com.android.internal.policy.PhoneWindow$DecorView::measure',3.13],
+['N/A',2.79],
+['android.view.RenderNode::create',2.27],
+['others',79.09]
+            ]
+        }]
+    });
+});
+
+$(function () {
+    $('#topclasschart').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Top Allocation Classes'
+        },
+        tooltip: {
+    	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    color: '#000000',
+                    connectorColor: '#000000',
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            data: [
+['java.lang.String',10.76],
+['java.lang.ref.FinalizerReference',8.79],
+['int[]',7.84],
+['android.graphics.Rect',6.65],
+['java.lang.Object[]',4.87],
+['others',61.09]
+            ]
+        }]
+    });
+});		
+</script>
+  
+</body></html>

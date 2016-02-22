@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://v3.bootcss.com/examples/offcanvas/# -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="./image/waanan.jpg">
+
+<title>For love and peace</title>
+
+<!-- Bootstrap core CSS -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="./css/offcanvas.css" rel="stylesheet">
+
+<!-- Optional Bootstrap Theme -->
+<link href="data:text/css;charset=utf-8," data-href="./css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+
+<link href="./css/patch.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+
+<link href="./css/docs.min.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="./js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+<div class="container">
+<div class="navbar-header">
+<a id =“top” class="navbar-brand" href="index.html">LT</a>
+</div>
+<div id="navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li ><a href="index.html">basic info</a></li>
+<li class="active"><a href="mem.html">Mem Distribution</a></li>
+</ul>
+</div><!-- /.nav-collapse -->
+</div><!-- /.container -->
+</nav><!-- /.navbar -->
+
+<div class="container bs-docs-container">
+
+<div class="row">
+    
+           <img id="mem_img" src="./image/0.bmp"  alt="image">
+           
+<div class="progress" style="width: 1024px;">
+  <div id="progress" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
+    0%
+  </div>
+</div>
+<div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+	<button type="button" class="btn btn-default" aria-label="Left Align" onclick="go_start()">
+	  <span id = "play_but" class="glyphicon glyphicon-indent-right" aria-hidden="true"></span>
+	</button>
+        <button type="button" class="btn btn-default" aria-label="Center Align" onclick="go_pre()"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></button>
+        <button type="button" class="btn btn-default" aria-label="Center Align" onclick="go_next()"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></button>
+        <button type="button" class="btn btn-default" aria-label="Center Align" onclick="go_end()"><span class="glyphicon glyphicon-indent-left" aria-hidden="true"></span></button>
+        <button type="button" class="btn btn-default" aria-label="Right Align"><span  id="state" aria-hidden="true">START</span></button>
+        <button type="button" class="btn btn-default" aria-label="Justify"><span id="cur" aria-hidden="true">0</span></button>
+      </div>
+    </div>
+
+
+
+
+
+</div>
+<hr>
+
+<footer>
+<p>© waanan 2015</p>
+</footer>
+
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/docs.min.js"></script>
+
+<script type="text/javascript" src="./js/highcharts.js"></script>
+<!-- <script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/exporting.js"></script>-->
+<script type="text/javascript" src="./js/highcharts-3d.js"></script>
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="./js/ie10-viewport-bug-workaround.js"></script>
+
+<script src="./js/offcanvas.js"></script>
+
+<script type="text/javascript">
+
+// control
+var len = 
+11
+;
+var cur = 0;
+
+var prog = document.getElementById("progress");
+var cur_mark = document.getElementById("cur");
+var state_mark = document.getElementById("state");
+var img = document.getElementById("mem_img");
+
+
+function play() {
+    img.src = "./image/"  + cur.toString() + ".bmp";
+     var per = Math.floor(cur*100/(2*len + 1));
+     prog.innerHTML = per.toString()+ "%";
+     prog.style.width = per.toString()+ "%";
+
+}
+
+function go_start() {
+        cur = 0;
+        play();
+        state_mark.innerHTML = "START";
+        cur_mark.innerHTML = "0";
+}
+
+function go_end() {
+        cur = (2*len + 1);
+        play();
+        state_mark.innerHTML = "END";
+        cur_mark.innerHTML = (Math.ceil(cur/2)).toString();;
+}
+
+function go_pre() {
+    if (cur === 0) {
+               alert("Already Move to The Start!");
+    } else {
+        cur--;
+        play();
+        if(cur === 0) {
+            state_mark.innerHTML = "START";
+        } else if (cur%2 === 1) {
+            state_mark.innerHTML = "BEFORE";
+        } else {
+            state_mark.innerHTML = "AFTER";          
+        }
+            cur_mark.innerHTML = (Math.ceil(cur/2)).toString();
+    }
+}
+
+function go_next() {
+    if (cur === (2*len + 1)) {
+               alert("Already Move to The End!");
+    }else {
+        cur++;
+        play();
+        if(cur ===  (2*len + 1)) {
+            state_mark.innerHTML = "END";
+        } else if (cur%2 === 1) {
+            state_mark.innerHTML = "BEFORE";
+        } else {
+            state_mark.innerHTML = "AFTER";          
+        }
+            cur_mark.innerHTML = (Math.ceil(cur/2)).toString();
+    }
+}
+
+
+</script>
+  
+</body></html>

@@ -1,0 +1,6 @@
+使用方法
+./release-analyzer -methodfile=./data/deltablue.txt <./data/deltablue.data
+
+
+./release-analyzer -methodfile=./data/com.android.settings.txt <./data/com.android.settings.data
+

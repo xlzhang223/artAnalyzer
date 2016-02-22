@@ -1,0 +1,2 @@
+使用方法
+./release-analyzer -methodfile=./data/deltablue.txt <./data/deltablue.data
